@@ -564,66 +564,15 @@ game.onUpdateInterval(5000, function () {
 forever(function () {
     if (Number3 == 1) {
         sprites.destroy(RayGun)
-        RayGun = sprites.create(img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . d d d d d 
-            . . . . . d d d d d d . . . d d 
-            . . . . . . . . . . . d d d d d 
-            . . . . . . . . . . . . . . d d 
-            . . . . . . . . . . . . . . d d 
-            . . . . . . . . . . . . . . d d 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            `, SpriteKind.Image)
+        RayGun = sprites.create(assets.image`Gun0`, SpriteKind.Image)
         RayGun.setPosition(mySprite.x - 16, mySprite.y)
     } else if (Number3 == 2) {
         sprites.destroy(RayGun)
-        RayGun = sprites.create(img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            d d d d d . . . . . . . . . . . 
-            d d . . . d d d d d d . . . . . 
-            d d d d d . . . . . . . . . . . 
-            d d . . . . . . . . . . . . . . 
-            d d . . . . . . . . . . . . . . 
-            d d . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            `, SpriteKind.Image)
+        RayGun = sprites.create(assets.image`Gun`, SpriteKind.Image)
         RayGun.setPosition(mySprite.x + 16, mySprite.y)
     } else {
         sprites.destroy(RayGun)
-        RayGun = sprites.create(img`
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            d d d d d . . . . . . . . . . . 
-            d d . . . d d d d d d . . . . . 
-            d d d d d . . . . . . . . . . . 
-            d d . . . . . . . . . . . . . . 
-            d d . . . . . . . . . . . . . . 
-            d d . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            . . . . . . . . . . . . . . . . 
-            `, SpriteKind.Image)
+        RayGun = sprites.create(assets.image`Gun`, SpriteKind.Image)
         RayGun.setPosition(mySprite.x + 16, mySprite.y)
     }
 })

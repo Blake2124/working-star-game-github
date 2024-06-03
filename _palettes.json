@@ -1,0 +1,28 @@
+{
+    "nextPaletteID": 1,
+    "palettes": {
+        "custom0": {
+            "id": "custom0",
+            "name": "Star Game",
+            "colors": [
+                "#000000",
+                "#FFFFFF",
+                "#0A99C5",
+                "#85C3D2",
+                "#164D62",
+                "#373737",
+                "#030104",
+                "#B6B8B7",
+                "#6B6B6B",
+                "#434343",
+                "#E1E285",
+                "#6D6E16",
+                "#FFF609",
+                "#FF8135",
+                "#D7C81D",
+                "#40C011"
+            ],
+            "custom": true
+        }
+    }
+}

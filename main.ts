@@ -44,10 +44,10 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                 . . . . . . . . . . . . . . . . 
                 . . . . . . . . . . . . . . . . 
                 . . . . . . . . . . . . . . . . 
-                c . . . . . . . . . . . . . . . 
-                c c 6 . . . . . . . . . . . . . 
-                c c 6 . . . . . . . . . . . . . 
-                c . . . . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
+                2 2 2 2 . . . . . . . . . . . . 
+                2 2 2 2 . . . . . . . . . . . . 
+                . . . . . . . . . . . . . . . . 
                 . . . . . . . . . . . . . . . . 
                 . . . . . . . . . . . . . . . . 
                 . . . . . . . . . . . . . . . . 
@@ -564,15 +564,18 @@ game.onUpdateInterval(5000, function () {
 forever(function () {
     if (Number3 == 1) {
         sprites.destroy(RayGun)
-        RayGun = sprites.create(assets.image`Gun0`, SpriteKind.Image)
+        RayGun = sprites.create(assets.image`Ray Gun0`, SpriteKind.Image)
+        RayGun.setScale(0.5, ScaleAnchor.Middle)
         RayGun.setPosition(mySprite.x - 16, mySprite.y)
     } else if (Number3 == 2) {
         sprites.destroy(RayGun)
-        RayGun = sprites.create(assets.image`Gun`, SpriteKind.Image)
+        RayGun = sprites.create(assets.image`Ray Gun`, SpriteKind.Image)
+        RayGun.setScale(0.5, ScaleAnchor.Middle)
         RayGun.setPosition(mySprite.x + 16, mySprite.y)
     } else {
         sprites.destroy(RayGun)
-        RayGun = sprites.create(assets.image`Gun`, SpriteKind.Image)
+        RayGun = sprites.create(assets.image`Ray Gun`, SpriteKind.Image)
+        RayGun.setScale(0.5, ScaleAnchor.Middle)
         RayGun.setPosition(mySprite.x + 16, mySprite.y)
     }
 })
